@@ -20,7 +20,7 @@ type Quote= {
 }
 
 type Coin = {
-    id: string,
+    id: number,
     name: string,
     symbol: string,
     slug: string,
@@ -33,7 +33,7 @@ type Coin = {
     date_added: string,
     tags: Array<string>
     platform: string | null,
-    quotes: Quote
+    quote: Quote
 }
 
 export interface  ICrypto {
