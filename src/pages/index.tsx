@@ -1,5 +1,8 @@
 import React, {Fragment} from 'react';
 import { RouteComponentProps} from "react-router-dom"
+import ErrorBountry from "../components/ErrorBountry"
+
+
 
 // router props which take a parameter of coin
 type RProps = {
@@ -13,7 +16,9 @@ interface IProps extends RouteComponentProps<RProps>{
 const Detail : React.FC<IProps> = (props) => {
     return (
         <Fragment>
-            <h3>Home</h3>
+            <ErrorBountry>
+                <h3>Home</h3>
+            </ErrorBountry>
         </Fragment>
     )
 }
