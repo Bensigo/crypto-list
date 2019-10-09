@@ -56,7 +56,7 @@ export default (state=initialState, action: IAction): ICrypto => {
             return {...state, cryptos: action.payload}
         case SET_COIN:
             const coins = [...state.cryptos]
-            const coin = coins.filter(coin => coin.name == action.payload)[0]
+            const coin = coins.filter(coin => coin.name === action.payload)[0]
             return {...state, coin}
         default:
             return state

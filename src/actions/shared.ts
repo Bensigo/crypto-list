@@ -8,7 +8,7 @@ export function callLoading(payload: boolean): IAction {
     }
 }
 
-export function callError(error: string): IAction {
+export function callError(error: string| null): IAction {
     return {
         type: CALL_ERROR,
         payload: error
