@@ -11,12 +11,12 @@ const routes: Array<Route> = [
     {
         path: "/",
         exact: true,
-        component: lazy(() => import("./pages/index"))
+        component: lazy(() => import("./pages/Index"))
     },
     {
         path: "/:coin",
         exact: true,
-        component: lazy(() => import("./pages/detail"))
+        component: lazy(() => import("./pages/Detail"))
     }
 ]
 

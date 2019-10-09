@@ -1,0 +1,28 @@
+.home-card {
+    z-index: 5;
+    height: 100vh;
+    position: relative;
+    padding: 10px;
+    top: -100px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+
+
+/* for tablet */
+@media only screen and (min-width: 600px){
+    .home-card {
+     padding: 15px;
+     border-top-left-radius: 15px !important;
+     border-top-right-radius: 15px !important; 
+    }
+   }
+   /* for destop */
+   @media only screen and (min-width: 768px){
+    .home-card {
+     padding: 30px;
+     border-top-left-radius: 20px !important;
+     border-top-right-radius: 20px !important;  
+    }
+   }

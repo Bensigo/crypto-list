@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import ErrorBountry from "../components/ErrorBountry"
+import ErrorBountry from "../../components/ErrorBountry"
 
 interface IProps {
 
