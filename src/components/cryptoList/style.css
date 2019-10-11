@@ -1,0 +1,23 @@
+
+.coin-img-graph {
+    height: 50px;
+    width: 150px;
+}
+.item-data {
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    margin: 10px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 3px;
+  }
+  .money {
+      color: #006DF0 !important;
+      font-family: 'Inter', sans-serif;
+  }
+  .coin:hover {
+    cursor: pointer;
+    transition: all .2s ease-out;
+    transform: scale(0.99);
+  }
+  

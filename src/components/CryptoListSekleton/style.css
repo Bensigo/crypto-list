@@ -1,0 +1,80 @@
+.card-skeleton {
+    border: 2px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 0 0 (rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01));
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background: #fff;
+  }
+  
+  .item {
+    width: 100%;
+    height: 20px;
+    background: #777;
+    margin: 10px;
+    border-radius: 3px;
+  }
+  .graph {
+    height: 50px;
+  }
+  .wrapper-sekleton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fullView 0.5s forwards linear;
+  }
+
+  .animate {
+    animation: shimmer 2s infinite;
+    background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+    background-size: 1000px 100%;
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+  @keyframes fullView {
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .sn {
+    color: rgb(134, 133, 133) !important;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    font-size: 11px;
+    word-wrap: break-word;
+  }
+  
+
+  @media only screen and (min-width: 768px){
+    .title, .sn  {
+       font-size: 13px;
+    }
+   }
+   
+   /* large for destop */
+   @media only screen and (min-width: 992px){
+     .title, .sn {
+        font-size: 15px;
+     }
+    }
+    /*  extra large for destop */
+    @media only screen and (min-width: 1200px){
+     .title ,.sn {
+        font-size: 18px;
+     }
+    }

@@ -8,9 +8,9 @@ export const SET_COIN = "SET_COIN"
 type MarketValue = {
     price: number,
     volume_24h: number,
-    percent_change_1h: number,
-    percent_change_24h: number,
-    percent_change_7d: number,
+    percent_change_1h: any,
+    percent_change_24h: any,
+    percent_change_7d: any,
     market_cap: number,
     last_updated: string
 }
@@ -19,7 +19,7 @@ type Quote= {
     BTC: MarketValue
 }
 
-type Coin = {
+export type Coin = {
     id: number,
     name: string,
     symbol: string,
@@ -56,7 +56,7 @@ export default (state=initialState, action: IAction): ICrypto => {
             return {...state, cryptos: action.payload}
         case SET_COIN:
             const coins = [...state.cryptos]
-            const coin = coins.filter(coin => coin.name == action.payload)[0]
+            const coin = coins.filter(coin => coin.name === action.payload)[0]
             return {...state, coin}
         default:
             return state

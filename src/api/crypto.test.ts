@@ -40,7 +40,6 @@ const result = [
 
 describe("API Test", () => {
     beforeEach(() => {
-        console.log(process.env.REACT_APP_API_KEY)
         mockAxios.get.mockImplementationOnce(() => 
         Promise.resolve({
             data: {
@@ -49,19 +48,15 @@ describe("API Test", () => {
         }))
     })
     it("should return data", async() => {
-        const data = await getCrypto()
-        expect(data).toEqual(result)
+        const data = await getCrypto(1)
+        expect(data.data).toEqual(result)
     })
     it("should call the enpoint once", () =>{
         expect(mockAxios.get).toHaveBeenCalledTimes(1);
     })
     it("should recieve parameter", () => {
-        const uri = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
-        const header = {
-            headers: {
-              "X-CMC_PRO_API_KEY": process.env.REACT_APP_API_KEY
-            }
-        }
-        expect(mockAxios.get).toHaveBeenCalledWith(uri, header)
+        const uri = "/.netlify/functions/cryptos"
+
+        expect(mockAxios.get).toHaveBeenCalledWith(uri, {params: {index: 1}})
     })
 })

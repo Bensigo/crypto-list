@@ -19,3 +19,6 @@ To run the project on you local machine
   - jest (unit testing)
   - CircleCI ( continuous integration)
   - typescript
+
+#### App look
+![Image app look](./crypto.png)

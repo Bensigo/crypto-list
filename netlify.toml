@@ -1,0 +1,7 @@
+[build]
+  functions = "lambda" #  netlify-lambda reads this
+  publish = "build"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
