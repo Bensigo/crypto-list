@@ -32,7 +32,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve:lambda": "netlify-lambda serve functions",
-    "build:lambda": "netlify-lambda build functions"
+    "build:lambda": "netlify-lambda build functions",
+    "prod": "npm build && npm  build:lambda"
   },
   "eslintConfig": {
     "extends": "react-app"
