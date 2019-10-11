@@ -17,13 +17,13 @@ function* getCryptosWorker(action: IAction) {
         yield store.dispatch(callLoading(true))
         yield store.dispatch(callError(null))
         // call api
-        const cryptos = yield call(getCryptos)
+        const cryptos = yield call(getCryptos, action.payload)
         yield store.dispatch(callLoading(false))
         yield put({type: SET_CRYPTOS, payload: cryptos})
         
     }catch(err){
         yield store.dispatch(callLoading(false))
-        yield store.dispatch(callError(err))
+        yield store.dispatch(callError(err.message))
     }
 }
 

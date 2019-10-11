@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
-import {withRouter, RouteComponentProps } from "react-router-dom"
+// import {withRouter, RouteComponentProps } from "react-router-dom"
 import {connect } from "react-redux"
 import { IState } from '../../reducers';
 
@@ -9,7 +9,7 @@ import { IState } from '../../reducers';
 interface IApp {
   hasError: boolean
 }
-interface IProps  extends RouteComponentProps {
+interface IProps   {
   error: string | null,
 
 }
@@ -56,6 +56,6 @@ const mapStateToProp = (state:IState) => ({
   error: state.shared.error
 })
 
-export default withRouter(connect(mapStateToProp)(ErrorBoundry))
+export default connect(mapStateToProp)(ErrorBoundry)
 
 

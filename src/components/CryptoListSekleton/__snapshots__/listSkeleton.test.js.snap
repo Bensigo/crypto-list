@@ -1,0 +1,542 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListSkeleton render component 1`] = `
+<div
+  className="card-skeleton"
+>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="title"
+    >
+      #
+    </div>
+    <div
+      className=" title name "
+    >
+      Name
+    </div>
+    <div
+      className="title number "
+    >
+      Price
+    </div>
+    <div
+      className="title number"
+    >
+      %Change(1hr)
+    </div>
+    <div
+      className=" title number"
+    >
+      Market cap
+    </div>
+    <div
+      className="title"
+    >
+      Price graph
+    </div>
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      1
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      2
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      3
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      4
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      5
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      6
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      7
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      8
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      9
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      10
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      11
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      12
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      13
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      14
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      15
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      16
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      17
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      18
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      19
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+  <div
+    className="wrapper-sekleton "
+  >
+    <div
+      className="sn"
+    >
+      20
+      .
+    </div>
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate "
+    />
+    <div
+      className="item animate graph "
+    />
+  </div>
+</div>
+`;

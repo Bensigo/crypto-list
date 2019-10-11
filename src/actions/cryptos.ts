@@ -3,9 +3,10 @@ import { IAction } from "../reducers/shared";
 
 
 
-export function getCryptos(): IAction{
+export function getCryptos(index: number): IAction{
     return {
-        type: CALL_GET_CRYPTOS
+        type: CALL_GET_CRYPTOS,
+        payload: index
     }
 }
 

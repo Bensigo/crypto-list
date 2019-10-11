@@ -27,9 +27,9 @@ const App: React.FC = () => {
     <Router>
        <Switch>
           <Suspense
-             fallback={() => (
+             fallback={
               <LinearProgress variant="determinate" color="primary" value={completed} />
-            )}
+            }
           >
             {
               routes.map((route, i) => 

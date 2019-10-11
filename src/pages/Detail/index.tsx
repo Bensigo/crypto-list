@@ -1,11 +1,16 @@
 import React, {Fragment} from 'react';
 import ErrorBountry from "../../components/ErrorBountry"
+import { RouteComponentProps} from "react-router-dom"
 
-interface IProps {
+// router props which take a parameter of coin
+type RProps = {
+    coin: string
+}
+interface IProps extends RouteComponentProps<RProps> {
 
 }
 
-const Index : React.FC<IProps> = (props) => {
+const Detail : React.FC<IProps> = (props) => {
     return (
         <Fragment>
             <ErrorBountry>
@@ -15,4 +20,4 @@ const Index : React.FC<IProps> = (props) => {
     )
 }
 
-export default Index
+export default Detail

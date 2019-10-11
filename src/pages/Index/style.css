@@ -1,6 +1,6 @@
 .home-card {
     z-index: 5;
-    height: 100vh;
+    height: 100%;
     position: relative;
     padding: 10px;
     top: -100px;
@@ -8,6 +8,21 @@
     border-top-right-radius: 10px !important;
 }
 
+.header {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+.col {
+    flex-direction: column;
+}
+.number {
+    text-align: right;
+}
+.name {
+    text-align: center;
+}
 
 
 /* for tablet */
@@ -17,6 +32,7 @@
      border-top-left-radius: 15px !important;
      border-top-right-radius: 15px !important; 
     }
+    
    }
    /* for destop */
    @media only screen and (min-width: 768px){
@@ -24,5 +40,8 @@
      padding: 30px;
      border-top-left-radius: 20px !important;
      border-top-right-radius: 20px !important;  
+    }
+    .header {
+        font-size: 28px;
     }
    }
