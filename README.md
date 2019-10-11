@@ -1,7 +1,7 @@
 ## Cryptocurrency List
 This project show a list of all cryptocurrencies and there current value in the market.
 #### Live URL
-![a link](https://brave-heyrovsky-2c7443.netlify.com/)
+[a link](https://brave-heyrovsky-2c7443.netlify.com/)
 
 #### Run project locally 
 To run the project on you local machine 
