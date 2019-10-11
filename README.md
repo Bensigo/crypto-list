@@ -20,6 +20,8 @@ To run the project on you local machine
   - jest (unit testing)
   - CircleCI ( continuous integration)
   - typescript
+  - netlify lambda
+  - netlify hosting
 
 #### App look
 ![Image app look](./crypto.png)
