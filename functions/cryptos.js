@@ -6,7 +6,7 @@ exports.handler = async function(event, context, callback) {
     const uri = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
     const {data} = await axios.get(uri, {
         headers: {
-          "X-CMC_PRO_API_KEY": process.env.API_KEY|| "ffee75f6-5399-4362-92f5-ff2d2d629698"
+          "X-CMC_PRO_API_KEY": process.env.API_KEY
         },
         params: {
             start: query.index,
