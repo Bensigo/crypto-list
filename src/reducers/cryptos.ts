@@ -36,15 +36,45 @@ export type Coin = {
     quote: Quote
 }
 
+interface ICoinMeta {
+    urls: {
+        website: Array<string>,
+        technical_doc: Array<string>,
+        twitter: Array<string>,
+        reddit: Array<string>,
+        message_board: Array<string>,
+        announcement: Array<any>,
+        chat: Array<any>,
+        explorer: Array<string>,
+        source_code: Array<string>
+        },
+        logo: string
+        id: number,
+        name: string,
+        symbol: string,
+        slug: string,
+        description: string
+        date_added: string,
+        tags: Array<string>,
+        platform: string| null,
+        category: string
+}
+
+
 export interface  ICrypto {
     cryptos: Array<Coin>| [],
-    coin: Coin | null
+    coin: Coin | null,
+    coinMeta: ICoinMeta| null
 }
 
 const initialState: ICrypto = {
     cryptos: [],
-    coin: null
+    coin: null,
+    coinMeta: null
 }
+
+
+
 
 export default (state=initialState, action: IAction): ICrypto => {
     /**

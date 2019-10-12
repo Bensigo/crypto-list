@@ -33,7 +33,7 @@
     "eject": "react-scripts eject",
     "serve:lambda": "netlify-lambda serve functions",
     "build:lambda": "netlify-lambda build functions",
-    "prod": "npm run build && npm run  build:lambda"
+    "prod": "npm run  build && npm run  build:lambda"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -57,6 +57,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.0",
     "react-test-renderer": "^16.10.2",
+    "redux-mock-store": "^1.5.3",
     "remote-redux-devtools": "^0.5.16"
   }
 }

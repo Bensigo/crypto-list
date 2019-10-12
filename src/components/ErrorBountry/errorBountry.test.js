@@ -3,26 +3,41 @@ import ErrorBountry from "./index"
 import {  configure, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import {Provider} from "react-redux"
-import store from "../../store"
 import {callError} from "../../actions/shared"
+import {BrowserRouter as Router} from "react-router-dom"
+import Skeletonloading from "../CryptoListSekleton"
+import configureStore from "redux-mock-store"
 
+configure({adapter: new Adapter()});
 describe("<ErrrorBountry/>", () => {
-    beforeAll(()=> store.dispatch(callError("bad network")))
-    configure({adapter: new Adapter()});
     it("check if snapshot match and error equal text",() => {
-        const error = "bad network"
-        const Randomcomp = () => {
-            throw new Error(error)
-        }
+        const mockStore = configureStore()
+        const store = mockStore({
+            crypto: {
+                coinMeta: null,
+                coin: null,
+                cryptos: []
+            },
+            shared: {
+                loading: false,
+                error: "Network error"
+            }
+        })
         // set error in state 
         const component = mount( 
-            <Provider store={store}>
-                <ErrorBountry>
-                    <Randomcomp  />
-                </ErrorBountry>
+            <Provider  store={store}>
+                <Router>
+                <React.Suspense fallback={<Skeletonloading/>}>
+                    <ErrorBountry>
+                       <h1>hello</h1>
+                    </ErrorBountry>
+                </React.Suspense>
+                </Router>
             </Provider>       
             
         )
-        expect(component.html()).toContain(error)
+        expect(component).toMatchSnapshot()
+        expect(component.props().store.getState().shared.error)
+            .toEqual("Network error")
     } )
 })
