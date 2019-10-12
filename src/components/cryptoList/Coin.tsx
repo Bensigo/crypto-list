@@ -40,7 +40,7 @@ const Coin: React.FC<IProps> = ({coin, index}) => {
            {formatter.format(coin.quote.USD.market_cap)}
            </div>
            <div className="item-data graph coin-img-graph " >
-               <Hidden xsDown>
+               <Hidden smDown>
                   <img className="mdDown" src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/52.png" alt="coin" />
                </Hidden>
            </div>
