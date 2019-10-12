@@ -42,7 +42,8 @@ describe("Crypto Reducer", () => {
     it("should return the initial state", () => {
         const initialState = {
             cryptos: [],
-            coin: null
+            coin: null,
+            coinMeta: null
         }
         const action = {
             type: "",
@@ -56,19 +57,20 @@ describe("Crypto Reducer", () => {
             payload: result
         }
         expect(cryptoReducer(undefined, action))
-            .toEqual({coin: null, cryptos: result})
+            .toEqual({coin: null, coinMeta: null,cryptos: result})
     })
     it("should change the state of coin", () => {
         const initialState = {
             cryptos: result,
-            coin: null
+            coin: null,
+            coinMeta: null
         }
         const action =  {
             type: SET_COIN,
             payload: "Bitcoin"
         }
         expect(cryptoReducer(initialState, action))
-            .toEqual({coin: result[0], cryptos: result})
+            .toEqual({coin: result[0], cryptos: result, coinMeta: null})
     })
 })
 

@@ -1,16 +1,4 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List render component 1`] = `
-<div
-  className="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
-  style={
-    Object {
-      "height": "70vh",
-    }
-  }
->
-  <p
-    className="MuiTypography-root MuiTypography-body1"
-  />
-</div>
-`;
+
+exports[`List should render correctly 1`] = `ReactWrapper {}`;

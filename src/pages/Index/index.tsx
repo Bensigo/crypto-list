@@ -20,11 +20,11 @@ interface IProps {
     getCryptos: (index: number) => void
 }
 
-const Index : React.FC<IProps> = ({loading, cryptos, getCryptos}) => {
+export const Index : React.FC<IProps> = ({loading, cryptos, getCryptos}) => {
     const [page, setPage] = useState(0);
     const [index, setIndex] = useState(1)
     const [rowsPerPage, setRowsPerPage] = useState(10);
-
+    
     useEffect(() => {
         getCryptos(index);
 
