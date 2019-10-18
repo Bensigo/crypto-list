@@ -1,9 +1,8 @@
-const axios = require("axios")
-
+import axios from "axios"
 
 exports.handler = async function(event, context, callback) {
     const query = event.queryStringParameters;
-    const url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/info"
+    const url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest"
     const {data} = await axios.get(url, {
         headers: {
             "X-CMC_PRO_API_KEY": process.env.API_KEY || "ffee75f6-5399-4362-92f5-ff2d2d629698" ,
