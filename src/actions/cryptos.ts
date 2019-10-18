@@ -1,4 +1,4 @@
-import {CALL_COIN, CALL_GET_CRYPTOS} from "../reducers/cryptos"
+import {CALL_COIN, CALL_GET_CRYPTOS, CALL_GET_METADATA} from "../reducers/cryptos"
 import { IAction } from "../reducers/shared";
 
 
@@ -10,9 +10,16 @@ export function getCryptos(index: number): IAction{
     }
 }
 
-export function getCoin(name: string): IAction {
+export function getCoin(id: string): IAction {
     return {
         type: CALL_COIN,
-        payload: name
+        payload: id
+    }
+}
+
+export function getCoinMeta(id: string): IAction{
+    return {
+        type: CALL_GET_METADATA,
+        payload: id
     }
 }

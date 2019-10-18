@@ -4,6 +4,9 @@ export const CALL_GET_CRYPTOS = "CALL_GET_CRYPTOS"
 export const SET_CRYPTOS = "SET_CRYPTOS"
 export const CALL_COIN = "CALL_COIN"
 export const SET_COIN = "SET_COIN"
+export const CALL_GET_METADATA = "CALL_GET_METADATA"
+export const SET_METADATA = "SET_METADATA"
+
 
 type MarketValue = {
     price: number,
@@ -16,7 +19,6 @@ type MarketValue = {
 }
 type Quote= {
     USD: MarketValue,
-    BTC: MarketValue
 }
 
 export type Coin = {
@@ -85,9 +87,9 @@ export default (state=initialState, action: IAction): ICrypto => {
         case SET_CRYPTOS:
             return {...state, cryptos: action.payload}
         case SET_COIN:
-            const coins = [...state.cryptos]
-            const coin = coins.filter(coin => coin.name === action.payload)[0]
-            return {...state, coin}
+            return {...state, coin: action.payload}
+        case SET_METADATA:
+            return {...state, coinMeta: action.payload}
         default:
             return state
     }

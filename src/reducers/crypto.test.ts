@@ -24,15 +24,6 @@ const result = [
     percent_change_7d: 0.986573,
     market_cap: 158055024432,
     last_updated: "2018-08-09T22:53:32.000Z"
-    },
-    BTC: {
-    price: 1,
-    volume_24h: 772012,
-    percent_change_1h: 0,
-    percent_change_24h: 0,
-    percent_change_7d: 0,
-    market_cap: 17024600,
-    last_updated: "2018-08-09T22:53:32.000Z"
     }
   }
  }
@@ -67,7 +58,7 @@ describe("Crypto Reducer", () => {
         }
         const action =  {
             type: SET_COIN,
-            payload: "Bitcoin"
+            payload: result[0]
         }
         expect(cryptoReducer(initialState, action))
             .toEqual({coin: result[0], cryptos: result, coinMeta: null})
