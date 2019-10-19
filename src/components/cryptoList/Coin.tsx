@@ -54,3 +54,4 @@ const Coin: React.FC<IProps> = ({coin, index, history}) => {
    )
 }
 export default withRouter(Coin)
+
