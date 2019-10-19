@@ -31,9 +31,6 @@ export const Index : React.FC<IProps> = ({loading, cryptos, getCryptos}) => {
     }, [getCryptos, index])
 
     useEffect(() => {
-        if(cryptos){
-            console.log(cryptos)
-        }
     }, [cryptos])
 
     const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {

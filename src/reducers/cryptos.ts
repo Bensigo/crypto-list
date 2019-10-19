@@ -38,7 +38,7 @@ export type Coin = {
     quote: Quote
 }
 
-interface ICoinMeta {
+export interface ICoinMeta {
     urls: {
         website: Array<string>,
         technical_doc: Array<string>,
@@ -87,6 +87,7 @@ export default (state=initialState, action: IAction): ICrypto => {
         case SET_CRYPTOS:
             return {...state, cryptos: action.payload}
         case SET_COIN:
+            console.log(action.payload)
             return {...state, coin: action.payload}
         case SET_METADATA:
             return {...state, coinMeta: action.payload}

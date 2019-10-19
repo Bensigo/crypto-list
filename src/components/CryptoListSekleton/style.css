@@ -1,18 +1,18 @@
 .card-skeleton {
-    border: 2px solid #fff;
+    border: 2px solid transparent;
     border-radius: 2px;
-    box-shadow: 0 0 0 0 (rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01));
+    /* box-shadow: 7px 9px 77px -10px rgba(36, 36, 36, 1); */
     padding: 10px 10px;
     width: 100%;
     height: 100%;
     margin: 0px auto;
-    background: #fff;
+    background: #101927;;
   }
   
   .item {
     width: 100%;
     height: 20px;
-    background: #777;
+    background: transparent;
     margin: 10px;
     border-radius: 3px;
   }
@@ -28,7 +28,7 @@
 
   .animate {
     animation: shimmer 2s infinite;
-    background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+    background: linear-gradient(to right, #9d9d9e 4%, #9d9e9e 25%, #6f7272 36%);
     background-size: 1000px 100%;
   }
   @keyframes shimmer {
@@ -58,7 +58,9 @@
     font-size: 11px;
     word-wrap: break-word;
   }
-  
+  .MuiTypography-colorInherit, .MuiTablePagination-select, .MuiSvgIcon-root {
+    color:#ffff;
+  }
 
   @media only screen and (min-width: 768px){
     .title, .sn  {

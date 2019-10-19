@@ -30,7 +30,7 @@ const CryptoList: React.FC<IProps> = ({cryptos}) => {
       ;
       return (
         <React.Fragment>
-          <div className="card-skeleton">
+          <div >
             <Headers />
             {
             cryptos.map((coin: ICoin, index: number) => 

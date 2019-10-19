@@ -1,0 +1,57 @@
+.card {
+    width: inherit;
+    background: #101927 ;
+    height: 100%;
+  }
+  
+  .img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+  }
+  
+  .title {
+    height: 20px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 2px;
+  }
+  
+  .text {
+    height: 10px;
+    width: 45px;
+    margin: 5px;
+    border-radius: 2px;
+  }
+  .btn {
+    margin: 30px 5px 5px 5px;
+    height: 30px;
+    width: 65px;
+    border-radius: 2px;
+  }
+  .paragraph {
+    margin-top: 30px;
+  }
+  
+  .w30 {
+    width: 30% !important;
+  }
+  .w100 {
+    width: 100% !important;
+  }
+  .graph {
+    height: 150px;
+    padding: 2px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .card-item {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+  
+    margin: 5px;
+  }
+  
+ 
+  

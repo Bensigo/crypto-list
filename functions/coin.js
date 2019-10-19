@@ -3,6 +3,7 @@ const axios = require("axios")
 
 exports.handler = async function(event, context, callback) {
     const query = event.queryStringParameters;
+    console.log(query.id)
     const url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/info"
     const {data} = await axios.get(url, {
         headers: {

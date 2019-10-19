@@ -1,6 +1,18 @@
 @import url('https://rsms.me/inter/inter.css');
 body {
-  margin: 0
+  margin: 0; 
+  background:black;
+}
+
+.home-card {
+  z-index: 5;
+  height: 100%;
+  position: relative;
+  background: #101927 !important;
+  padding: 10px;
+  top: -100px;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
 }
 
 /* mobile first design */
@@ -13,6 +25,29 @@ body {
   margin-right: auto;
   height: inherit;
 }
+.animate {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(to right, #9d9d9e 4%, #9d9e9e 25%, #6f7272 36%);
+  background-size: 1000px 100%;
+}
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+.wrapper {
+  width: 0px;
+  animation: fullView 0.5s forwards linear;
+}
+
+@keyframes fullView {
+  100% {
+    width: 100%;
+  }
+}
 
 /* for tablet */
 @media only screen and (min-width: 600px){
@@ -20,12 +55,22 @@ body {
     max-width: 600px;
     padding-top: 25px;
   }
+  .home-card {
+    padding: 15px;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important; 
+   }
 }
 /* for destop */
 @media only screen and (min-width: 768px){
  .wrapper{
   padding-top: 35px;
   max-width: 700px;
+ }
+ .home-card {
+  padding: 30px;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;  
  }
 }
 
@@ -43,3 +88,4 @@ body {
    max-width: 920px;
   }
  }
+
