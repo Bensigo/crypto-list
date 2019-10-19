@@ -1,0 +1,38 @@
+.coin-title {
+    margin: 5px 10px;
+    color:#fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.content {
+    margin: 1px 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.price {
+    color:#045fcf; 
+}
+
+.link-btn{
+    margin: 30px 5px 5px 5px;
+    font-family: 'Inter', sans-serif;
+    width: 100px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #006df0;
+
+}
+.coin-subtitle{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px 0px;
+}
+.coin-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: thin;
+    color: #fff;  
+}

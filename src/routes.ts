@@ -14,7 +14,7 @@ const routes: Array<Route> = [
         component: lazy(() => import("./pages/Index"))
     },
     {
-        path: "/:coin",
+        path: "/:id",
         exact: true,
         component: lazy(() => import("./pages/Detail"))
     }

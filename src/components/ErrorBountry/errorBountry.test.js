@@ -3,7 +3,6 @@ import ErrorBountry from "./index"
 import {  configure, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import {Provider} from "react-redux"
-import {callError} from "../../actions/shared"
 import {BrowserRouter as Router} from "react-router-dom"
 import Skeletonloading from "../CryptoListSekleton"
 import configureStore from "redux-mock-store"

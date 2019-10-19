@@ -2,13 +2,14 @@ import React from 'react';
 import Hidden from '@material-ui/core/Hidden';
 import { Coin as ICoin } from '../../reducers/cryptos';
 import "./style.css"
+import {RouteComponentProps, withRouter} from "react-router-dom"
 
-interface IProps {
+interface IProps extends RouteComponentProps {
     coin: ICoin
     index: number
 }
 
-const Coin: React.FC<IProps> = ({coin, index}) => {
+const Coin: React.FC<IProps> = ({coin, index, history}) => {
     const formatter = new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD"
@@ -24,8 +25,12 @@ const Coin: React.FC<IProps> = ({coin, index}) => {
             }
         }
     }, [idRef])
+    const goToDetail = () => {
+        history.push(coin.id.toString());
+    
+    }
     return (
-        <div className="wrapper-sekleton coin" key={index}>
+        <div className="wrapper-sekleton coin" key={index} onClick={goToDetail}>
            <div className="sn">{index + 1}.</div>
            <div className="item-data title name" >
                {coin.name}
@@ -48,4 +53,4 @@ const Coin: React.FC<IProps> = ({coin, index}) => {
          
    )
 }
-export default Coin
+export default withRouter(Coin)

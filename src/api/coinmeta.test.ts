@@ -53,7 +53,7 @@ describe("coin info api", () => {
     })
     it("check if res matches result", async () => {
         // return coin info
-        const data = await coinInfo(1)
+        const data = await coinInfo("1")
         expect(data).toEqual(result)
     })
     it("it should run once", () => {
@@ -61,6 +61,6 @@ describe("coin info api", () => {
     })
     it("params should match.", () => {
         expect(mockAxios.get)
-        .toHaveBeenCalledWith("/.netlify/functions/coin", {params: {id: 1}})
+        .toHaveBeenCalledWith("/.netlify/functions/coin", {params: {id: "1"}})
     })
 })
